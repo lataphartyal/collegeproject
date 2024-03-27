@@ -32,7 +32,7 @@ const ProductCard = ()=> {
                 <img src="images/prodcompare.svg" alt="compare" /> 
                 </Link>
                 <Link> 
-                <img src="images/add-view.svg" alt="view" /> 
+                <img src="images/view.svg" alt="view" /> 
                 </Link>
                 <Link> 
                 <img src="images/add-cart.svg" alt="addcart" /> 
