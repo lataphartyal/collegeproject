@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import BlogCard from "../components/BlogCard";
 import ProductCard from "../components/ProductCard";
 import SpecialProduct from "../components/SpecialProduct";
+import Container from "../components/Container";
 function Home() {
   return (
     <>
-      <section className="home-wrapper-1 py-5">
-        <div className="container-xxl">
-          <div className="row">
+    <Container class1='home-wrapper-1 py-5'>
+    <div className="row">
             <div className="col-6">
               <div className="main-banner position-relative p-3">
                 <img
@@ -42,8 +42,9 @@ function Home() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+    </Container>
+    
+     
       <section className="Featured-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
