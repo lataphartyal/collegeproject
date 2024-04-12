@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import ReactStars from "react-rating-stars-component";
@@ -7,7 +7,6 @@ import Color from "../components/color";
 
 const OurStore = () => {
   const [grid, setGrid] = useState(4);
-
 
   return (
     <>
@@ -79,7 +78,7 @@ const OurStore = () => {
                   </div>
                   <h5 className="sub-title">Colors</h5>
                   <div>
-                    <Color/>
+                    <Color />
                   </div>
                   <h5 className="sub-title">Size</h5>
                   <div>
@@ -180,11 +179,14 @@ const OurStore = () => {
                     <p className="mb-0 d-block" style={{ width: "100px" }}>
                       Sort By:
                     </p>
-                    <select name="" className="form-control form-select" id="">
+                    <select
+                      name=""
+                      defaultValue={"manual"}
+                      className="form-control form-select"
+                      id=""
+                    >
                       <option value="manual">Featured</option>
-                      <option value="best-selling" selected="selected">
-                        Best Selling
-                      </option>
+                      <option value="best-selling">Best Selling</option>
                       <option value="title-ascending">
                         Alphabetically,A-Z
                       </option>
@@ -201,7 +203,7 @@ const OurStore = () => {
                         Date, old to new
                       </option>
                       <option value="created-descending">
-                        Date, new t0 old
+                        Date, new to old
                       </option>
                     </select>
                   </div>
@@ -246,7 +248,7 @@ const OurStore = () => {
               </div>
               <div className="products-list pb-5">
                 <div className="d-flex gap-10 flex-wrap">
-                <ProductCard grid={grid}/>
+                  <ProductCard grid={grid} />
                 </div>
               </div>
             </div>
