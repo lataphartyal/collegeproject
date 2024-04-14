@@ -21,7 +21,7 @@ const ProductCard = (props) => {
           }`}
           className="product-card position-relative"
         >
-          <div className="wishlist-icon postion-absolute">
+          <div className="wishlist-icon position-absolute">
             <button className="border-0 bg-transparent">
               <img src="images/wish.svg" alt="wishlist" />
             </button>
@@ -44,8 +44,12 @@ const ProductCard = (props) => {
               edit={false}
               activeColor="#ffd700"
             />
+            <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
+              This is a highly recommended watch.
+            </p>
             <p className="price">$100</p>
           </div>
+
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
               <button className="border-0 bg-transparent">
@@ -83,6 +87,11 @@ const ProductCard = (props) => {
           </div>
           <div className="product-image">
             <img src="images/watch.jpg" alt="product" />
+            <img
+              src="images/watch-1.avif"
+              className="img-fluid"
+              alt="product"
+            />
           </div>
           <div className="product-details">
             <h6 className="brand">Havels</h6>
@@ -94,6 +103,10 @@ const ProductCard = (props) => {
               edit={false}
               activeColor="#ffd700"
             />
+            <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
+              This is a highly recommended watch.
+            </p>
+
             <p className="price">$100</p>
           </div>
           <div className="action-bar position-absolute">
